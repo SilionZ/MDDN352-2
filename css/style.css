@@ -75,9 +75,8 @@ html {
     display: block;
 }
 
-.column-left,.column-middle,.column-right {
+.column-left,.column-middle,.column-right,.column-left1,.column-middle1,.column-right1 {
     float: left;
-    width: 33.33%;
     padding: 10px;
     height: 300px;
 }
@@ -88,18 +87,29 @@ html {
     clear: both;
 }
 
-@media only screen and (max-width: 700px) {
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media only screen and (max-width: 550px) {
 .dropdown {display: inline;}
 #bye {display: none;}
 .column-left {width: 100%; margin-bottom: 25px;}
 .column-middle{width: 100%;margin-bottom: 25px;}
 .column-right{width: 100%; }
+.column-left1 {width: 100%; margin-bottom: 25px;}
+.column-middle1{width: 100%;margin-bottom: 25px;}
+.column-right1{width: 100%; }
 }
 
-@media only screen and (min-width: 701px) {
+@media only screen and (min-width: 551px) {
 .dropdown {display: none;}
 #bye {display: inline;}
 .column-left {width: 33.33%;}
 .column-middle{width: 33.33%;}
 .column-right{width: 33.33%;}
+.column-left1 {width: 25%;}
+.column-middle1{width: 50%;}
+.column-right1{width: 25%;}
 }
